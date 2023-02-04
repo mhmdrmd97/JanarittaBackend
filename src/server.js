@@ -37,7 +37,8 @@ let mydb ={
           }
     ]
   }
-
+  
+//add img 
 app.post("/add",async (req,res)=>{
 
    mydb =  {"PromoCode": mydb.PromoCode,
@@ -63,6 +64,67 @@ app.post("/add",async (req,res)=>{
     res.json(mydb.products)
 
 })
+//update img 
+app.post("/update",async (req,res)=>{
+
+   mydb =  {"PromoCode": mydb.PromoCode,
+   "products": [
+    ...mydb.products.map(({img,likes,nameAr,nameEn,place,price,top,left,scaleX,scaleY,angle})=> {
+        
+        
+       if( nameEn == req.body.nameEn) return  {
+        "img": req.body.img,
+        "likes": req.body.likes,
+        "nameAr": req.body.nameAr,
+        "nameEn": req.body.newNameEn,
+        "place": req.body.place,
+        "price": req.body.price,
+        "top":req.body.top,
+        "left":req.body.left,
+        "scaleX":req.body.scaleX,
+        "scaleY":req.body.scaleY,
+        "angle":req.body.angle
+      };
+
+      return  {
+        "img": img,
+        "likes": likes,
+        "nameAr": nameAr,
+        "nameEn": nameEn,
+        "place": place,
+        "price": price,
+        "top":top,
+        "left":left,
+        "scaleX":scaleX,
+        "scaleY":scaleY,
+        "angle":angle
+      };
+    
+    
+    }),
+    ]
+}
+
+    res.json(mydb.products)
+
+})
+
+//delete img 
+app.post("/delete",async (req,res)=>{
+
+   mydb =  {"PromoCode": mydb.PromoCode,
+   "products": [
+    ...mydb.products.filter(({nameEn})=> nameEn != req.body.nameEn),    
+    ]
+}
+
+    res.json(mydb.products)
+
+})
+
+
+
+//get all data
 app.get("/",async (req,res)=>{
     // const [rows,fields] = await (await db).execute("SELECT * from user");
     // console.log(rows)
