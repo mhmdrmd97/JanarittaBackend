@@ -1,4 +1,14 @@
 const express = require("express")
+const {createConnection} = require("mysql2/promise")
+const db = createConnection({
+    host:"localhost",
+    user:"root",
+    password:"mysql123$",
+    database:"mhmd_db",
+    rowsAsArray: false,
+
+});
+
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -6,9 +16,14 @@ const PORT = process.env.PORT || 4000;
 const connectedUser = new Set();
 
 
-app.get("/",(req,res)=>{
+app.get("/",async (req,res)=>{
+    const [rows,fields] = await (await db).execute("SELECT * from user");
+    console.log(rows)
+    u= rows[0].username;
+    e= rows[0].email;
+    p= rows[0].password;
 
-    res.json({"name":"hello"});
+    res.send(`email:${e}, username:${u}, password:${p} `)
 
 })
 
