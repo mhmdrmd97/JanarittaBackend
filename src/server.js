@@ -8,7 +8,7 @@ const connectedUser = new Set();
 
 app.get("/",(req,res)=>{
 
-    res.send("hello");
+    res.json({"name":"hello"});
 
 })
 
