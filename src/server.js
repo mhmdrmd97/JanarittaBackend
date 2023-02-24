@@ -21,6 +21,23 @@ const connectedUser = new Set();
 
 let mydb ={
     "PromoCode": "\"hh\"",
+    
+    "exhibitionList": [
+      {
+        "imgUrl": null,
+        "title": null,
+        "body": null,
+        "header": null,
+        "myExhibitionList": null,
+      },
+      {
+        "imgUrl": null,
+        "title": "2",
+        "body": "22222222222",
+        "header": "2",
+        "myExhibitionList": ["2", "2", "2", "2"],
+      },
+    ],
     "theme":{
     "colors":{
     "primaryColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
@@ -113,6 +130,55 @@ let mydb ={
     },    
     
     },
+    "lessons": [
+    {"name":'Beginner-Lesson 1: Introduction to Art',
+      "videoUrl":"bbbbbbbbb",
+      "group":"Beginner"
+    },
+    {"name":'Beginner-Lesson 2: Tools and Vision',
+      "videoUrl":"cccccccccccc",
+      "group":"Beginner"
+    },
+    {"name":'Intermediate-Lesson 3: Drawing and Ratios',
+      "videoUrl":"ddddddddddd",
+      "group":"Intermediate"
+    },
+    {"name":'Intermediate-Lesson 4: Colors Combinations',
+      "videoUrl":"eeeeeeeee",
+      "group":"Intermediate"
+    },
+    {"name":'Advanced-Lesson 5: Advanced Concepts',
+      "videoUrl":"ffffffffff",
+      "group":"Advanced"
+    },
+  ],
+    "lessonsFilters":[
+    'All Lessons',
+    'Beginner',
+    'Intermediate',
+    'Advanced'
+  ],
+    
+    "canvasProducts": [
+        {
+            "img": "https://jodar-artistry.com/wp-content/uploads/2021/01/Janaritta-Armooti-10.jpg",
+            "likes": 0,
+            "nameAr": "تجربة ثلاثة",
+            "nameEn": "third Image",
+            "place": "Jordan",
+            "price": 42,
+            "subTitleAr":تجربة ثلاثة",
+            "subTitleEn":"third Image"
+          }
+    ]
+  },
+    "quotes": [
+        {
+            "name":"hi"
+            "img": "https://jodar-artistry.com/wp-content/uploads/2021/01/Janaritta-Armooti-10.jpg"
+        }
+    ]
+  },
     
     "products": [
         {
