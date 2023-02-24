@@ -21,6 +21,99 @@ const connectedUser = new Set();
 
 let mydb ={
     "PromoCode": "\"hh\"",
+    "theme":{
+    "colors":{
+    "primaryColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "secondaryColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "generalTextColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "generalBgColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "generalBorderColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+
+  "text1ExhibitionColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text2ExhibitionColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text3ExhibitionColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text4ExhibitionColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "bg1ExhibitionColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "bg2ExhibitionColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "border1ColorExhibitionColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "border2ColorExhibitionColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+
+  "text1LessonsColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text2LessonsColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text3LessonsColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text4LessonsColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "bg1LessonsColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "bg2LessonsColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "border1ColorLessonsColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "border2ColorLessonsColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+
+  "text1DrawerColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text2DrawerColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text3DrawerColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text4DrawerColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "bg1DrawerColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "bg2DrawerColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "border1ColorDrawerColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "border2ColorDrawerColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+
+  "text1ShopColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text2ShopColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text3ShopColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "text4ShopColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "bg1ShopColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "bg2ShopColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "border1ColorShopColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},
+  "border2ColorShopColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}
+    },
+    "media":{
+      "primaryEnlargeScale":1.0,
+  "secondaryEnlargeScale":1.0,
+  "generalTextEnlargeScale":1.0,
+  "generalBgEnlargeScale":1.0,
+  "generalBorderEnlargeScale":1.0,
+
+  "text1ExhibitionEnlargeScale":1.0,
+  "text2ExhibitionEnlargeScale":1.0,
+  "text3ExhibitionEnlargeScale":1.0,
+  "text4ExhibitionEnlargeScale":1.0,
+  "bg1ExhibitionEnlargeScale":1.0,
+  "bg2ExhibitionEnlargeScale":1.0,
+  "border1ColorExhibitionEnlargeScale":1.0,
+  "border2ColorExhibitionEnlargeScale":1.0,
+
+  "text1LessonsEnlargeScale":1.0,
+  "text2LessonsEnlargeScale":1.0,
+  "text3LessonsEnlargeScale":1.0,
+  "text4LessonsEnlargeScale":1.0,
+  "bg1LessonsEnlargeScale":1.0,
+  "bg2LessonsEnlargeScale":1.0,
+  "border1ColorLessonsEnlargeScale":1.0,
+  "border2ColorLessonsEnlargeScale":1.0,
+
+  "text1DrawerEnlargeScale":1.0,
+  "text2DrawerEnlargeScale":1.0,
+  "text3DrawerEnlargeScale":1.0,
+  "text4DrawerEnlargeScale":1.0,
+  "bg1DrawerEnlargeScale":1.0,
+  "bg2DrawerEnlargeScale":1.0,
+  "border1ColorDrawerEnlargeScale":1.0,
+  "border2ColorDrawerEnlargeScale":1.0,
+
+  "text1ShopEnlargeScale":1.0,
+  "text2ShopEnlargeScale":1.0,
+  "text3ShopEnlargeScale":1.0,
+  "text4ShopEnlargeScale":1.0,
+  "bg1ShopEnlargeScale":1.0,
+  "bg2ShopEnlargeScale":1.0,
+  "border1ColorShopEnlargeScale":1.0,
+  "border2ColorShopEnlargeScale":1.0,
+
+  "mediaFontEnlargeScale":1.0
+    
+    },    
+    
+    },
+    
     "products": [
         {
             "img": "https://jodar-artistry.com/wp-content/uploads/2021/01/Janaritta-Armooti-10.jpg",
