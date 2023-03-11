@@ -167,7 +167,7 @@ let mydb ={
             "nameEn": "third Image",
             "place": "Jordan",
             "price": 42,
-            "subTitleAr":تجربة ثلاثة",
+            "subTitleAr":"تحربة",
             "subTitleEn":"third Image"
           }
     ]
