@@ -170,32 +170,32 @@ let mydb ={
             "subTitleAr":"تحربة",
             "subTitleEn":"third Image"
           }
-    ]
-  },
+    ],
     "quotes": [
         {
-            "name":"hi"
+            "name":"hi",
             "img": "https://jodar-artistry.com/wp-content/uploads/2021/01/Janaritta-Armooti-10.jpg"
         }
-    ]
-  },
-    
-    "products": [
-        {
-            "img": "https://jodar-artistry.com/wp-content/uploads/2021/01/Janaritta-Armooti-10.jpg",
-            "likes": 0,
-            "nameAr": "تجربة ثلاثة",
-            "nameEn": "third Image",
-            "place": "Jordan",
-            "price": 42,
-            "top": "0",
-            "left": "0",
-            "scaleX": "0",
-            "scaleY": "0",
-            "angle": "0"
-          }
-    ]
-  }
+    ],
+  
+  "products": [
+      {
+          "img": "https://jodar-artistry.com/wp-content/uploads/2021/01/Janaritta-Armooti-10.jpg",
+          "likes": 0,
+          "nameAr": "تجربة ثلاثة",
+          "nameEn": "third Image",
+          "place": "Jordan",
+          "price": 42,
+          "top": "0",
+          "left": "0",
+          "scaleX": "0",
+          "scaleY": "0",
+          "angle": "0"
+        }
+  ]
+  };
+  
+  
   
 //add img 
 app.post("/add",async (req,res)=>{
