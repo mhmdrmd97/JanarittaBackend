@@ -282,6 +282,15 @@ app.post("/delete",async (req,res)=>{
 })
 
 
+app.post("/getImgByName", (req,res)=>{
+  selectedImg =  mydb.products.filter((elem,index)=> elem.nameEn == req.body.selectedImg)[0].img;   
+  res.json({"img": selectedImg})
+}
+
+);
+
+
+
 
 //get all data
 app.get("/",async (req,res)=>{
