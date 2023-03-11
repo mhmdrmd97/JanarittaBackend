@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 4000;
 const connectedUser = new Set();
 
 let mydb ={
-    "PromoCode": "\"hh\"",
+    "PromoCode": "hh",
     
     "exhibitionList": [
       {
